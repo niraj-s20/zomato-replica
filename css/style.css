@@ -1,0 +1,365 @@
+@use './reset.scss';
+/* Add your css here */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*    border property    */
+.border-primary {
+  border: 0.1rem solid white;
+  border-radius: 2px;
+}
+
+/*   header navigation     */
+.h-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 1rem;
+  background: #fff;
+}
+
+.h-container .get-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.h-container .nav_items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.h-container a {
+  text-decoration: none;
+  color: #000;
+}
+
+.h-container li {
+  list-style: none;
+}
+
+.h-container .primary-height {
+  height: 2rem;
+}
+
+/*   header navigation   end  */
+/*   banner      */
+.banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: url("../images/bg.jpg") no-repeat center center/cover;
+}
+
+.banner .login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 2rem;
+}
+
+.banner .login .login-link {
+  padding: 0.1rem 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.banner p {
+  font-size: 2rem;
+  text-align: center;
+  margin: 2rem;
+  color: #fff;
+}
+
+.banner .secondary-height {
+  height: 8rem;
+  margin: 5rem;
+}
+
+.banner .search-restaurent {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 2rem;
+}
+
+.banner .search-restaurent #hotels {
+  border-radius: 5px;
+  background: #fff;
+  font-size: 1rem;
+  border: 0.2rem solid #fff;
+  margin: 0.5rem;
+}
+
+.banner .search-restaurent #search-rest {
+  border-radius: 5px;
+  background: #fff;
+  border: 0.2rem solid #fff;
+  font-size: 1rem;
+  margin: 0.5rem;
+}
+
+.banner .search-restaurent #search-btn {
+  border-radius: 5px;
+  background: #e23744;
+  border: 0.2rem solid #e23744;
+  font-size: 1rem;
+  color: white;
+  margin: 0.5rem;
+}
+
+/*   banner end     */
+/*    widget section */
+.widget {
+  background: #fff;
+  padding: 1rem;
+  border: #f6f6f6 1rem solid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.widget h4 {
+  margin-left: 0.5rem;
+}
+
+.widget .search-div {
+  border: 1px solid #f6f6f6;
+  border-radius: 5px;
+  padding: 0.3rem;
+  margin: 1rem 0.5rem;
+  width: 100%;
+}
+
+.widget .search-div .search-del {
+  border: none;
+  font-size: 1rem;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  width: 75%;
+}
+
+.widget .search-div .detect-btn {
+  border: none;
+  height: 2rem;
+  background: #f6f6f6;
+  font-size: 1rem;
+}
+
+.widget .order-btn {
+  border-radius: 2px;
+  background: #099e44;
+  border: 0.2rem solid #099e44;
+  font-size: 1.2rem;
+  width: 100%;
+  color: white;
+  margin: 0.5rem;
+}
+
+.widget hr {
+  color: #f6f6f6;
+  margin: 1rem  0.5rem;
+  width: 100%;
+}
+
+.widget p {
+  color: #099e44;
+  font-size: 1.2rem;
+  width: 100%;
+  margin: 1rem 0.5rem;
+  padding: 0.3rem;
+}
+
+/*    widget section end */
+/* categories section   */
+.categories {
+  border: #f6f6f6 1rem solid;
+  background: #f6f6f6;
+  /* categories title */
+  /* categories subtitle   */
+  /* categories list  */
+}
+
+.categories #cat-title {
+  margin-left: 0.5rem;
+  color: #333;
+  font-weight: 500;
+}
+
+.categories #cat-subtitle {
+  color: #888;
+  margin-left: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.categories .category-list {
+  padding: 1rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.categories .box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 0.1rem;
+  font-size: 1rem;
+  height: 10rem;
+  width: 4.8rem;
+}
+
+.img-height {
+  height: 6rem;
+  width: 3rem;
+}
+
+/* categories section end  */
+/* localities */
+.localities {
+  border: #f6f6f6 1rem solid;
+  background: #f6f6f6;
+}
+
+.localities #loc-title {
+  color: #333;
+  font-weight: 500;
+}
+
+.localities #loc-subtitle {
+  color: #888;
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.localities .locality-list {
+  background: #fff;
+  list-style: none;
+  padding: 1rem;
+}
+
+.localities .locality-list li {
+  margin: 0.2rem;
+}
+
+.localities .locality-list li span {
+  color: #888;
+}
+
+/* localities end */
+/* footer */
+footer {
+  background: #282c35;
+  color: #8c8b91;
+  /* image section */
+  /* image section end*/
+}
+
+footer hr {
+  margin: 0 0.5rem;
+  border: 0.25px solid #8c8b91;
+  background: #8c8b91;
+}
+
+footer .image-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .image-section .image-section-two {
+  font-size: 1rem;
+  padding: 1rem;
+  margin: 1rem;
+  background: #282c35;
+}
+
+footer .image-section .image-section-two #Cities {
+  background: #1c1f25;
+  color: #fff;
+  border: 1px #f6f6f6 solid;
+  border-radius: 2px;
+  padding: 0.2rem 2rem;
+}
+
+footer .image-section img {
+  height: 4rem;
+  width: 4rem;
+  margin: 1rem;
+}
+
+footer .footer-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+footer .footer-wrapper .AboutZomato {
+  list-style: none;
+}
+
+/* footer end */
+/*# sourceMappingURL=style.css.map */
