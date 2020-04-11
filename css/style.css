@@ -8,6 +8,7 @@
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+/* desktop view */
 /*    border property    */
 .border-primary {
   border: 0.1rem solid white;
@@ -41,6 +42,15 @@
           align-items: center;
 }
 
+@media (min-width: 756px) {
+  .h-container .get-link {
+    position: relative;
+    top: 1rem;
+    margin-left: 0px;
+    margin-bottom: 1rem;
+  }
+}
+
 .h-container .nav_items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,16 +63,23 @@
           align-items: center;
 }
 
-.h-container a {
+@media (min-width: 756px) {
+  .h-container .nav_items {
+    float: left;
+    padding: 0 1rem;
+  }
+}
+
+a {
   text-decoration: none;
   color: #000;
 }
 
-.h-container li {
+li {
   list-style: none;
 }
 
-.h-container .primary-height {
+.primary-height {
   height: 2rem;
 }
 
@@ -105,9 +122,24 @@
   color: #fff;
 }
 
+@media (min-width: 756px) {
+  .banner p {
+    font-size: 2.5rem;
+    text-align: center;
+    margin: 1rem;
+  }
+}
+
 .banner .secondary-height {
   height: 8rem;
   margin: 5rem;
+}
+
+@media (min-width: 756px) {
+  .banner .secondary-height {
+    height: 9rem;
+    margin: 4rem;
+  }
 }
 
 .banner .search-restaurent {
@@ -121,12 +153,34 @@
   margin: 2rem;
 }
 
+@media (min-width: 756px) {
+  .banner .search-restaurent {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 1rem 0;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .banner .search-restaurent #hotels {
   border-radius: 5px;
   background: #fff;
   font-size: 1rem;
   border: 0.2rem solid #fff;
   margin: 0.5rem;
+}
+
+@media (min-width: 756px) {
+  .banner .search-restaurent #hotels {
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+  }
 }
 
 .banner .search-restaurent #search-rest {
@@ -137,6 +191,15 @@
   margin: 0.5rem;
 }
 
+@media (min-width: 756px) {
+  .banner .search-restaurent #search-rest {
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+  }
+}
+
 .banner .search-restaurent #search-btn {
   border-radius: 5px;
   background: #e23744;
@@ -144,6 +207,15 @@
   font-size: 1rem;
   color: white;
   margin: 0.5rem;
+}
+
+@media (min-width: 756px) {
+  .banner .search-restaurent #search-btn {
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+  }
 }
 
 /*   banner end     */
@@ -173,10 +245,10 @@
   width: 100%;
 }
 
-.widget .search-div .search-del {
+.widget .search-div #search-del {
   border: none;
   font-size: 1rem;
-  padding: 0.5rem;
+  padding: 0.7rem 2rem;
   margin: 0.5rem;
   width: 75%;
 }
@@ -350,14 +422,90 @@ footer .footer-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  padding: 1rem;
 }
 
-footer .footer-wrapper .AboutZomato {
+footer .footer-wrapper ul {
+  width: 480px;
+  height: auto;
+  padding-right: 1rem;
+}
+
+footer .footer-wrapper li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 5px;
+  list-style: none;
+}
+
+footer .line {
+  width: 90%;
+  height: 0.5px;
+  background-color: #605e5e;
+  margin: 15px;
+}
+
+footer .countries {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  height: auto;
+}
+
+@media (min-width: 756px) {
+  footer .countries {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+footer .countries ul {
+  margin-left: 15px;
+  margin-right: 250px;
+}
+
+footer .countries ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-bottom: 5px;
+}
+
+footer .terms {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1rem;
+}
+
+footer .terms li {
+  padding-right: 2rem;
   list-style: none;
 }
 
